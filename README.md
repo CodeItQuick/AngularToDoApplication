@@ -1,27 +1,21 @@
-# Todo
+# Angular To-Do Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
+To-Do Application that can do standard tasks, such as:
+* Load a default list of To-Do's 
+* Create a new To-Do 
+* Edit a To-Do 
+* Delete a To-Do
 
-## Development server
+This website was to show my ability to work with:
+* Angular/Typescript
+* RxJs
+* Moleculer Backend
+* Material UI/UX
+* Nginx
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+There is an nginx.conf file. Install this in your nginx configuration to run the main site on /site/ and
+the api on /api/.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+I've created a docker-compose that will run the project on 'docker-compose up'. It is also 
+necessary to copy the nginx.conf file into another nginx conf folder, and running nginx. The version of nginx
+I used was 1.21.6.

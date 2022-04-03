@@ -1,0 +1,16 @@
+<h1 mat-dialog-title>Create ToDo</h1>
+<div mat-dialog-content>
+  <mat-form-field appearance="fill">
+    <mat-label>Describe The Task</mat-label>
+    <input matInput [(ngModel)]="data.name" required>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>How many hours?</mat-label>
+    <input matInput [(ngModel)]="data.time" required>
+  </mat-form-field>
+  <div>Name: {{data.name}}</div>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onClose()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Ok</button>
+</div>

@@ -1,0 +1,8 @@
+FROM node:16.14 as build-context-backend
+
+RUN mkdir /home/backend
+COPY backend /home/backend/
+
+WORKDIR /home/backend/
+RUN npm ci
+CMD ["npm", "start"]
